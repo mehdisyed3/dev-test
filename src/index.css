@@ -1,13 +1,84 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.app {
+	display: flex;
+	background-color: rgb(208, 209, 208);
+	height: 100vh;
+	padding: 30px;
+	justify-content: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.app__display {
+	padding: 10px;
+	background-color: white;
+	border: 1px solid black;
+	margin-bottom: 15px;
+	width: 65%;
+	height: 50%;
+}
+
+.app__display > p:hover {
+	cursor: pointer;
+}
+
+.app__container {
+	align-items: center;
+	background-color: pink;
+	display: flex;
+	flex-direction: column;
+	width: 400px;
+	height: 500px;
+	border-radius: 8px;
+	box-shadow: 1px 2px 9px 5px rgba(0, 0, 0, 0.78);
+	justify-content: center;
+}
+
+.app__input {
+	width: 69%;
+	margin-bottom: 10px;
+	border: 1px solid black;
+	height: 20px;
+	border-radius: 4px;
+}
+
+.app__buttonOne {
+	background-color: rgb(165, 232, 155);
+	font-weight: 900;
+	padding: 6px;
+	width: 35%;
+	height: 35px;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	border: none;
+	outline-width: 0;
+	border-radius: 6px;
+	box-shadow: -1px 1px 15px -3px rgba(0, 0, 0, 0.58);
+}
+
+.app__buttonOne:hover {
+	cursor: pointer;
+}
+
+.app__buttonTwo {
+	background-color: rgb(165, 232, 155);
+	font-weight: 900;
+	padding: 6px;
+	width: 70%;
+	height: 35px;
+	margin-top: 8px;
+	margin-bottom: 12px;
+	border-radius: 6px;
+	border: none;
+	outline-width: 0;
+	box-shadow: -1px 1px 15px -3px rgba(0, 0, 0, 0.58);
+}
+
+.app__buttonTwo:hover {
+	cursor: pointer;
+}
+
+@media (max-width: 480px) {
+	.app__container {
+		width: 320px;
+		/* width: auto; */
+		height: 500;
+	}
 }
